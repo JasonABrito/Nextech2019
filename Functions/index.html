@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>In the Console</h1>
+
+    <script>
+        //Kata 1
+        function add(x, y) {
+            return x + y;
+            var sum = x + y
+        }
+        console.log(add(2, 4))
+        //Kata 2
+        function multiply(a, b) {
+            var sum = 0
+            for (var i = 0; i < b; i += 1) {
+                sum = add(sum, a)
+            }
+            return sum;
+        }
+        console.log(multiply(6, 8))
+        //Kata 3
+        function power(v, c) {
+            let sum = 1
+            for (var i = 0; i < c; i += 1) {
+                sum = multiply(sum, v)
+            }
+            return sum;
+        }
+        console.log(power(2, 8))
+        //kata 4
+        function factorial (w){
+            let sum = 1
+            for (var i = 0; i < w; i += 1 ) {
+                sum = multiply(sum, add(w,-i))
+            }
+            return sum;
+        }
+        console.log(factorial(4))
+        //Kata 5
+        function fibonacci(f){
+            const start = [0, 1]
+            for(var i = 2; i < f; i += 1){
+                let lastnumber = start[start.length-1]
+                let secondtolast = start[start.length -2]
+                let nextnumber = lastnumber + secondtolast
+                start.push(nextnumber)
+            }
+            return start[start.length -1]
+        }
+        console.log(fibonacci(8))
+    </script>
+
+
+
+</body>
+
+</html>

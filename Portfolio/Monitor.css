@@ -1,0 +1,281 @@
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: royalblue;
+    font-weight: 900;
+    font-size: 27px;
+    font-family: 'VT323', monospace;
+    max-width: 900px;
+    max-height: 1440px;
+}
+
+/* Text Box */
+
+#Me {
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    height: 250px;
+    width: 200px;
+    z-index: 9999;
+}
+
+#Image {
+    text-align: center
+}
+
+#Image2 {
+    text-align: center
+}
+
+p {
+    color: white;
+    position: relative;
+    height: auto;
+    text-align: right;
+}
+
+.txtB {
+    position: absolute;
+    bottom: 0px;
+    left: 320px;
+    height: 93px;
+    width: 530px;
+    border: black solid 2px;
+    background-color: rgba(50, 42, 168, 0.7);
+    z-index: 999;
+}
+
+.txtBN {
+    position: absolute;
+    bottom: 95px;
+    left: 360px;
+    height: 30px;
+    width: 90px;
+    border: black solid 2px;
+    background-color: rgba(50, 42, 168, 0.7);
+    z-index: 999;
+}
+
+.Name {
+    color: white;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+
+/* Type writer */
+
+#typeWriter {
+    overflow: hidden;
+    margin: 0 auto;
+    border-right: 1px solid transparent;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: typing 3.0s steps(40, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: transparent
+    }
+}
+
+/*Type writer end*/
+
+/* Txt Box End*/
+
+#Taskbar {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(236, 236, 236, 0.9);
+}
+
+#Time {
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+}
+
+#Hub {
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+    z-index: 999;
+    border-left: 4px;
+}
+
+#App {
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+#BrowserA {
+    position: absolute;
+    left: 360px;
+    top: 100px;
+    height: 500px;
+    width: 800px;
+    background-color: silver;
+    border: rgba(236, 236, 236) solid 6px;
+    border-top: rgba(236, 236, 236) solid 30px;
+}
+
+#abt {
+    color: black
+}
+
+#X {
+    position: absolute;
+    left: 770px;
+    top: -27px;
+    background-color: red;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+#IdA {
+    position: absolute;
+    top: -57px;
+    color: black;
+}
+
+#BrowserB {
+    position: absolute;
+    left: 360px;
+    top: 100px;
+    height: 500px;
+    width: 800px;
+    background-color: silver;
+    border: rgba(236, 236, 236) solid 6px;
+    border-top: rgba(236, 236, 236) solid 30px;
+}
+
+#IdB {
+    position: absolute;
+    top: -57px;
+    color: black;
+}
+
+#BrowserC {
+    position: absolute;
+    left: 360px;
+    top: 100px;
+    height: 500px;
+    width: 800px;
+    background-color: silver;
+    border: rgba(236, 236, 236) solid 6px;
+    border-top: rgba(236, 236, 236) solid 30px;
+}
+
+#IdC {
+    position: absolute;
+    top: -57px;
+    color: black;
+}
+
+.dot {
+    border: black solid 2px;
+    border-radius: 90%;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 340px;
+    top: 20px;
+    z-index: 999;
+}
+
+#picBack {
+    background: linear-gradient(to bottom right, purple, royalblue);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 150px;
+    width: 97.5%;
+}
+
+#Options {
+    background-color: rgba(22, 22, 22, 0.795);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 170px;
+    left: 20px;
+    height: 70px;
+    width: 95%;
+}
+
+#Intro:hover {
+    cursor: pointer;
+}
+
+#Hobbies:hover {
+    cursor: pointer;
+}
+
+#Goals:hover {
+    cursor: pointer;
+}
+
+#Introduction {
+    background-color: rgba(22, 22, 22, 0.795);
+    color: aliceblue;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+}
+#Amusement {
+    background-color: rgba(22, 22, 22, 0.795);
+    color: aliceblue;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+}#Ambitions {
+    background-color: rgba(22, 22, 22, 0.795);
+    color: aliceblue;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+}
+#TicTacExe{
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    left: 300px;
+}
+#IconTxt{
+    position: absolute;
+    left:30px;
+}
+
+#LinkI{
+    display: flex;
+flex-direction: column;
+}
+#conFor{
+    position: absolute;
+    left: 250px;
+    top: 0px;
+}

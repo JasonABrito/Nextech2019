@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="Monitor.css">
+<link rel="stylesheet" href="TicTac.css">
+<link rel="stylesheet" href="ConFor.css">
+
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+<head>
+    <link rel="icon" type="Image/png" href="Logo.png" />
+    <title>Monitor</title>
+    <script type="text/javascript" src="date_time.js"></script>
+</head>
+
+<body>
+    <div id="red" class=" checker red "></div>
+    <div id="black" class="checker black "></div>
+    <!--Application icons-->
+
+    <button id="App" onclick="aboutPop()">
+        <img src="AboutmeExe.png" alt="About" height="50">
+        <p>About Me.exe</p>
+    </button>
+    <br>
+    <button id="App" onclick="projectPop()">
+        <img src="ProjectsExe.png" alt="Projects" height="50">
+        <p>Projects</p>
+    </button>
+    <br>
+    <button id="App" onclick="contactPop()">
+        <img src="PhoneExe.png" alt="Contact" height="50">
+        <p>Contact Me.exe</p>
+    </button>
+
+    <!-- About Browser-->
+
+    <div id="BrowserA" class="hidden">
+        <p id="IdA">About me</p>
+        <button id="X" onclick="aboutPop()">
+            <img src="media.png" alt="X" height="15" align=center>
+        </button>
+        <img src="me.png" class="dot">
+        <div id="picBack"> </div>
+        <div id="Options">
+            <p id="Intro" onclick="Intro()">Intro</p>
+            <p id="Hobbies" onclick="Hobbies()">Hobbies</p>
+            <p id="Goals" onclick="Goals()">Goals</p>
+            <p id="Introduction" class="hidden">Hello! My name is Jason A. Brito, I am currently 17 years old and I was born in Georgia but I currently live
+                in Indiana. I have a family of eight, both my parents and five of my siblings. I plan on going through a
+                computer science path, as for which college I'm currently looking at both Purdue as well as IUPUI, IUPUI
+                being my first choice.
+            </p>
+            <p id="Amusement" class="hidden">
+                Video Games | Coding | Learning new things | Drawing
+            </p>
+            <p id="Ambitions" class="hidden">
+                My goals are sort of vague but nonetheless I am still striving to reach them. My goal is to first figure out where I'm going
+                to go after finishing highschool. Also I always want to further my skills in the coding field learning the
+                key languages. I plan joining a successful company in the game design field aftwerwards.
+            </p>
+        </div>
+        <p id="abt"></p>
+    </div>
+
+    <!-- Portfolio Browser-->
+
+    <div id="BrowserB" class="hidden">
+        <p id="IdB">Projects</p>
+        <button id="X" onclick="projectPop()">
+            <img src="media.png" alt="X" height="15" align=center>
+        </button>
+        <div id="AppIcons">
+            <button id="App" onclick="ticTac()">
+                <img src="TicApp.png" alt="Tic" height="100">
+                <p> TicTacToe.exe</p>
+            </button>
+        </div>
+        </button>
+        <div id="ticBoard" class="hidden">
+            <table id="TicTacExe">
+                <tr>
+                    <td id=1></td>
+                    <td id=2></td>
+                    <td id=3></td>
+                </tr>
+                <tr>
+                    <td id=4></td>
+                    <td id=5></td>
+                    <td id=6></td>
+                </tr>
+                <tr>
+                    <td id=7></td>
+                    <td id=8></td>
+                    <td id=9></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <button id="App" onclick="conFor()">
+            <img src="ConFor.png" alt="Con" height="120" width="150">
+            <p> Connect4.exe</p>
+        </button>
+
+        <iframe id="conFor" class="hidden" title="Connect Four" width="500" height="500" src="https://jasonabrito.github.io/ConnectFour/">
+        </iframe>
+    </div>
+
+    <!-- Contact Browser-->
+
+    <div id="BrowserC" class="hidden">
+        <p id="IdC">Contact Me</p>
+        <button id="X" onclick="contactPop()">
+            <img src="media.png" alt="X" height="15" align=center>
+        </button>
+        <div id="LinkI">
+            <div>
+                <a href="https://github.com/JasonABrito" target="_blank">
+                    <img src="GitHubIcon.svg" alt="Git" height="120">
+                </a>
+                <p id="IconTxt"> </p>
+            </div>
+            <a href="https://www.linkedin.com/in/jason-brito-67218a168/" target="_blank">
+                <img src="download.png" alt="Link" height="120">
+                <p id="IconTxt"> </p>
+            </a>
+        </div>
+        <div>
+                <a href="mailto:jasobri24@gmail.com">
+                    <img src="Gmail.png" alt="Git" height="120">
+                </a>
+                <p id="IconTxt"> </p>
+            </div>
+            <div>
+                    <a href="Jason A. Brito Resume.docx.pdf" target="_blank">
+                        <img src="Resume.png" alt="Git" height="120">
+                    </a>
+                    <p id="IconTxt"> </p>
+                </div>
+  
+    </div>
+    </div>
+    </div>
+
+    <!-- TextBox-->
+
+    <div id="Image">
+        <img id="Me" src="./meo.png">
+    </div>
+    <div class="txtBN">
+        <p id="typeWriter" class="Name">Jason</p>
+    </div>
+    <div class="txtB">
+        <p id="typeWriter">Hello again, So this is my monitor screen.
+            <br>Feel free to click on whatever, whether it
+            <br> be the projects I've made or my about.exe. </p>
+    </div>
+
+    <!-- TaskBar-->
+
+    <button id="Hub">
+        <img src="HubHD.png" alt="Hub Clear" align="left">
+    </button>
+    <div id="Taskbar">
+        <div id="Time">
+            <span id="dateTime"></span>
+            <script type="text/javascript">
+                window.onload = dateTime('dateTime');
+            </script>
+        </div>
+    </div>
+
+    <!--js-->
+
+    <script>
+        var i = document.getElementById("Introduction");
+        var g = document.getElementById("Amusement");
+        var a = document.getElementById("Ambitions");
+
+        function aboutPop() {
+            var x = document.getElementById("BrowserA");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function projectPop() {
+            var x = document.getElementById("BrowserB");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function contactPop() {
+            var x = document.getElementById("BrowserC");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }   
+
+        function Intro() {
+            var i = document.getElementById("Introduction");
+            var g = document.getElementById("Amusement");
+            var a = document.getElementById("Ambitions");
+            if (i.style.display === "none") {
+                i.style.display = "block";
+            } else if (g.style.display === "block") {
+                i.style.display = "none";
+            } else if (a.style.display === "block") {
+                i.style.display = "none";
+            } else {
+                i.style.display = "none";
+            }
+        }
+
+        function Hobbies() {
+            var i = document.getElementById("Introduction");
+            var g = document.getElementById("Amusement");
+            var a = document.getElementById("Ambitions");
+            if (g.style.display === "none") {
+                g.style.display = "block";
+            } else if (i.style.display === "block") {
+                g.style.display = "none";
+            } else if (a.style.display === "block") {
+                g.style.display = "none";
+            } else {
+                g.style.display = "none";
+            }
+        }
+
+        function Goals() {
+            var i = document.getElementById("Introduction");
+            var g = document.getElementById("Amusement");
+            var a = document.getElementById("Ambitions");
+            if (a.style.display === "none") {
+                a.style.display = "block";
+            } else if (g.style.display === "block") {
+                a.style.display = "none";
+            } else if (i.style.display === "block") {
+                a.style.display = "none";
+            } else {
+                a.style.display = "none";
+            }
+        }
+
+        function ticTac() {
+            var x = document.getElementById("ticBoard");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function conFor() {
+            var x = document.getElementById("conFor");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script src="TicTac.js" type="text/javascript"></script>
+</body>
+
+</html>
